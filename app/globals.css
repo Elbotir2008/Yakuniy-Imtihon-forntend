@@ -2,26 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  font-size: 62.5%;
+  font-family: Roboto;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+  transition: all 0.1s linear;
+}
+span {
+  display: inline-block;
+  font-family: Yellowtail;
+  font-size: 2rem;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #22343d;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  border: 1px solid #6c5fbc;
+  background-color: #6c5fbc;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  transition: 0.1s linear;
+}
+button:hover {
+  background-color: #fff;
+  border: 1px solid #6c5fbc;
+  color: #6c5fbc;
+  transition: 0.1s linear;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.flex-class {
+  display: flex;
+}
+.grid-class {
+  display: grid;
+}
+.selected {
+  font-weight: 700;
+  color: #6c5fbc;
 }

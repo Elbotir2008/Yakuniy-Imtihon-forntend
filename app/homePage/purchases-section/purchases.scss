@@ -1,0 +1,111 @@
+.purchases-section {
+  width: 100%;
+  height: 70rem;
+  background-color: #f9f9f9;
+  padding: 5rem;
+  padding-top: 50rem;
+  margin-bottom: 10rem;
+  .purchases-left {
+    margin-right: 30rem;
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 4rem;
+      b {
+        color: #936dff;
+      }
+    }
+    .purchases-card {
+      position: relative;
+      width: 40rem;
+      height: 8rem;
+      background-color: #fff;
+      margin-top: 3rem;
+      padding: 1rem;
+      border-radius: 2rem;
+      transition: 0.1s linear;
+      cursor: pointer;
+      .flex-class {
+        gap: 1rem;
+        align-items: center;
+        h6 {
+          margin-top: -1rem;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+        h5 {
+          font-size: 1.2rem;
+        }
+        span {
+          position: absolute;
+          left: 75%;
+          top: 50%;
+          font-size: 1.5rem;
+          color: #acadb9;
+        }
+      }
+      &:hover {
+        box-shadow: -10px 10px 50px 10px #eee;
+        transition: 0.1s linear;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .purchases-right {
+    width: 60rem;
+    margin-top: 10rem;
+    height: 35rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    padding: 2rem;
+    box-shadow: -10px 10px 50px 10px #eee;
+    .right-title {
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+      img {
+        width: 2rem;
+        margin-left: 0.6rem;
+        cursor: pointer;
+      }
+    }
+    .right-body {
+      .body-card {
+        margin-top: 5rem;
+        .flex-class {
+          align-items: center;
+          gap: 2rem;
+          h6 {
+            margin-top: -1rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+          h5 {
+            font-size: 1.2rem;
+          }
+          span {
+            position: absolute;
+            left: 75%;
+            top: 50%;
+            font-size: 1.5rem;
+            color: #acadb9;
+          }
+        }
+        .resctangles {
+          margin-top: 1rem;
+          img {
+            width: 27rem;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

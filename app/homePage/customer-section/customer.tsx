@@ -25,7 +25,7 @@ const Customer = () => {
               save maximum effort for the clients and save maximum effort.
               Online invoice payment helps companies save time ”
             </p>
-            <img src="./Stars.svg" alt="Eror" />
+            <img src="./Stars.svg" className="stars" alt="Eror" />
           </div>
           <div className="customer-card2 customer-card">
             <div className="card">

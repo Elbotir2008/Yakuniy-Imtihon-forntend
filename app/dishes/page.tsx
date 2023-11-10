@@ -1,7 +1,17 @@
-import React from "react";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import Dish from "./dish/Dish";
+import Questions from "./questions/Questions";
 
 const Dishes = () => {
-  return <div>Dishes</div>;
+  return (
+    <>
+      <Header />
+      <Dish />
+      <Questions />
+      <Footer />
+    </>
+  );
 };
 
 export default Dishes;

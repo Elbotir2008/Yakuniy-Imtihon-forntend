@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+  // .hero-section {
+  //   .hero-left {
+  //     width: 25rem;
+  //     margin-left: -50px;
+  //   }
+  //   .hero-right {
+  //     .heroimg {
+  //       width: 27rem;
+  //       margin: 10rem 15rem;
+  //     }
+  //     .img-card {
+  //       margin-left: -50px;
+  //     }
+  //   }
+  // }
+
+  .premium-section {
+    .premium-2 {
+      .premium-img1 {
+        width: 30rem;
+        margin-left: -5rem;
+      }
+      .premium2-texts {
+        margin-left: -5rem;
+        p {
+          width: 30rem;
+        }
+        button {
+          width: 15rem;
+          .arrow-right {
+            max-width: 2.5rem;
+            position: absolute;
+            top: -60%;
+            left: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  .purchases-section {
+    .purchases-left {
+      h1 {
+        width: 40rem;
+        font-size: 1rem;
+        margin-left: -50px;
+      }
+      .purchases-card {
+        margin-left: -50px;
+        height: 8rem;
+        max-width: 30rem;
+      }
+    }
+    .purchases-right {
+      width: 70rem;
+      margin-left: -50px;
+      margin-top: 50px;
+    }
+  }
+
+  .customer-section {
+    .customer-body {
+      .customer-card {
+        .quota {
+          visibility: hidden;
+        }
+        .rectangles {
+          visibility: hidden;
+          img {
+            width: 20rem;
+          }
+        }
+        .stars {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-1 {
+      .footer-input2 {
+        h1 {
+          font-size: 7rem !important;
+        }
+        button {
+          margin-left: 1.5rem;
+          margin-top: -0.4rem;
+        }
+        input {
+          width: 33rem;
+        }
+      }
+      img {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .cart {
+    visibility: hidden;
+  }
+  .nav-right {
+    .login {
+      visibility: hidden;
+    }
+    .register {
+      width: 10rem;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2rem;
+
+    .hero-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-left {
+      text-align: center;
+      margin: 0 8rem !important;
+      h1 {
+        width: auto !important;
+        font-size: 3rem !important;
+      }
+
+      p {
+        width: auto !important;
+        font-size: 1rem !important;
+      }
+    }
+
+    .hero-right {
+      .heroimg {
+        width: 30rem;
+        margin: 2rem;
+      }
+    }
+  }
+}

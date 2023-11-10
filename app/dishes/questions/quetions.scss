@@ -1,0 +1,42 @@
+.section-question {
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 35rem;
+  background-color: hsl(0, 0%, 98%);
+  .question-title {
+    h1 {
+      margin: 0 auto;
+      width: 40rem;
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 10rem;
+      font-weight: 700;
+      b {
+        color: #6c5fbc;
+      }
+    }
+  }
+  .question-body {
+    width: 100%;
+    .ques {
+      margin-top: 4rem;
+      justify-content: space-between;
+      .ques-texts {
+        h5 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        p {
+          line-height: 2rem;
+          width: 46rem;
+          height: 8rem;
+          font-size: 1.3rem;
+          margin-top: 2rem;
+        }
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

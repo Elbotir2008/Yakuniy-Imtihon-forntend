@@ -1,0 +1,36 @@
+.details-card {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 5rem;
+  margin-top: -15rem;
+  img {
+    margin: 0 auto;
+    width: 30rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  p {
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+    color: #fff;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #309d5b;
+  }
+  span {
+    display: inline-block;
+    margin-left: 50rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

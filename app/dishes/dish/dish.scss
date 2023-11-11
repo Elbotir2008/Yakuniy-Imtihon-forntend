@@ -1,0 +1,61 @@
+.dishesPage-section {
+  margin-bottom: 20rem;
+  .searchBox {
+    position: absolute;
+    left: 35%;
+    top: 18%;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    color: #878787;
+    padding: 1rem;
+  }
+  .dishesPage-cards {
+    padding-left: 5rem;
+    margin-top: 5rem;
+    gap: 3rem;
+    grid-template-columns: auto auto auto auto;
+    .card {
+      padding: 3rem;
+      border-radius: 2rem;
+      box-shadow: 0 0 60px 20px #eee;
+      width: 20rem;
+      background-color: #fff;
+      h4 {
+        font-size: 1.2rem;
+        color: #fff;
+        width: 8rem;
+        border-radius: 1rem;
+        padding-top: 0.4rem;
+        margin-top: 1rem;
+        text-align: center;
+        height: 2.5rem;
+        background-color: #33ac64;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      .flex-class {
+        span {
+          color: #8e97a6;
+        }
+        img {
+          width: 2rem;
+        }
+      }
+      p {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+      .add {
+        cursor: pointer;
+
+        transform: scale(1.7);
+        margin: 1.5rem 4rem;
+      }
+    }
+  }
+}

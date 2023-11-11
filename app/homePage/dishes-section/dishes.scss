@@ -4,6 +4,9 @@
   margin-top: 50rem;
   background-color: #f9f9f9;
   padding: 3rem;
+  @media (max-width: 480px) {
+    margin-bottom: 110rem;
+  }
   .dishes-title {
     h1 {
       text-align: center;
@@ -20,6 +23,10 @@
     gap: 3rem;
     grid-template-columns: auto auto auto auto;
     display: grid;
+    @media (max-width: 480px) {
+      grid-template-columns: auto;
+      padding-left: 7rem;
+    }
     .card {
       padding: 3rem;
       border-radius: 2rem;

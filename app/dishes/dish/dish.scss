@@ -10,12 +10,21 @@
     font-size: 1.5rem;
     color: #878787;
     padding: 1rem;
+    @media (max-width: 480px) {
+      margin-left: -8rem;
+      margin-top: 1rem;
+      width: 30rem;
+    }
   }
   .dishesPage-cards {
     padding-left: 5rem;
     margin-top: 5rem;
     gap: 3rem;
     grid-template-columns: auto auto auto auto;
+    @media (max-width: 480px) {
+      grid-template-columns: auto;
+      padding-left: 11rem;
+    }
     .card {
       padding: 3rem;
       border-radius: 2rem;

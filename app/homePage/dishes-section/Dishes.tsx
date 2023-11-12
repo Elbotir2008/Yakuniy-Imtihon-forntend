@@ -2,18 +2,10 @@
 import axios from "axios";
 import "./dishes.scss";
 import { useState, useEffect } from "react";
-
-type Dish = {
-  id: number;
-  imgUrl: string;
-  category: string;
-  name: string;
-  stars: number;
-  price: number;
-};
+import { ProductType } from "@/app/types/type";
 
 const Dishes = () => {
-  const [dish, setDish] = useState<Dish[]>([]);
+  const [dish, setDish] = useState<ProductType[]>([]);
 
   const fetchDishes = async () => {
     try {

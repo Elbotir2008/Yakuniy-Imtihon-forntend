@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/1.svg"
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "name": "Swe Dish",
     "category": "Trending",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/2.svg"
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "name": "Swe Dish",
     "category": "Supreme",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/3.svg"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/4.svg"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/1.svg"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "name": "Swe Dish",
     "category": "Trending",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/2.svg"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "name": "Swe Dish",
     "category": "Supreme",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/3.svg"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/4.svg"
   },
@@ -67,7 +67,7 @@
     "id": "9",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/1.svg"
   },
@@ -75,7 +75,7 @@
     "id": "10",
     "name": "Swe Dish",
     "category": "Trending",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/2.svg"
   },
@@ -83,7 +83,7 @@
     "id": "11",
     "name": "Swe Dish",
     "category": "Supreme",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/3.svg"
   },
@@ -91,7 +91,7 @@
     "id": "12",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/4.svg"
   },
@@ -99,7 +99,7 @@
     "id": "13",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/1.svg"
   },
@@ -107,7 +107,7 @@
     "id": "14",
     "name": "Swe Dish",
     "category": "Trending",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/2.svg"
   },
@@ -115,7 +115,7 @@
     "id": "15",
     "name": "Swe Dish",
     "category": "Supreme",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/3.svg"
   },
@@ -123,7 +123,7 @@
     "id": "16",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/4.svg"
   },
@@ -131,7 +131,7 @@
     "id": "17",
     "name": "Swe Dish",
     "category": "Supreme",
-    "price": "$19.99",
+    "price": "19.99",
     "stars": "4.9",
     "imgUrl": "../forDb/3.svg"
   },
@@ -139,7 +139,7 @@
     "id": "18",
     "name": "Chicken Hell",
     "category": "Healthy",
-    "price": "$12.99",
+    "price": "12.99",
     "stars": "4.8",
     "imgUrl": "../forDb/4.svg"
   }

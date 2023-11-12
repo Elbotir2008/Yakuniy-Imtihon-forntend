@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <nav className={`flex-class ${menuOpen ? "open" : ""}`}>
           <div className="nav-left flex-class">
-            <img src="./Logo.svg" alt="Eror" />
+            <img src="../Logo.svg" alt="Eror" />
             <h1>eatly</h1>
             <ul className={`flex-class ${menuOpen ? "open" : ""}`}>
               <Link href="/homePage">
@@ -29,7 +29,7 @@ const Header = () => {
           <div className="nav-right flex-class">
             <Link href="/cart">
               <img
-                src="./ant-design_shopping-cart-outlined.svg"
+                src="../ant-design_shopping-cart-outlined.svg"
                 className="cart"
                 alt="Eror"
               />

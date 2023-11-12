@@ -1,12 +1,15 @@
 "use client";
+import { ProductType } from "@/app/types/type";
 import "./dish.scss";
 import axios from "axios";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
+import Spinner from "@/app/components/loading/Loading";
 
 const Dish = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchedDishes, setSearchedDishes] = useState([]);
+  const [searchedDishes, setSearchedDishes] = useState<ProductType[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
   // const [dishesPerPage] = useState(4);
   // const totalPages = Math.ceil(searchedDishes.length / dishesPerPage);
@@ -15,18 +18,21 @@ const Dish = () => {
   //   pageNumbers.push(i);
   // }
 
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<ProductType[]>([]);
 
-  const handleClickImg = (dsh) => {
-    const updatedCart = [...cart, dsh];
-    setCart(updatedCart);
-    localStorage.setItem("cartProducts", JSON.stringify(updatedCart));
+  const handleClickImg = (product: ProductType): void => {
+    if (!cart.includes(product)) {
+      const updatedCart: any = [...cart, { ...product, numOfProducts: 1 }];
+      setCart(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+    }
+    toast.success("Successfully added in Cart");
   };
 
   const searchDishes = async () => {
     try {
       let res = await axios.get(
-        `https://654ea70d358230d8f0ccbf59.mockapi.io/api/v1/Dishes?search=${searchQuery}&page=2&limit=8`
+        `https://654ea70d358230d8f0ccbf59.mockapi.io/api/v1/Dishes?search=${searchQuery}&page=1&limit=8`
       );
       setSearchedDishes(res.data);
       console.log(res.data);
@@ -52,8 +58,8 @@ const Dish = () => {
 
         <div className="dishesPage-cards grid-class">
           {searchedDishes.length > 0 ? (
-            searchedDishes.map((dsh) => (
-              <div className="card" key={dsh.id}>
+            searchedDishes.map((dsh, index) => (
+              <div className="card" key={index}>
                 <Link href={`/dishes/${dsh.id}`}>
                   <img src={dsh.imgUrl} alt="Error" />
                 </Link>
@@ -77,7 +83,7 @@ const Dish = () => {
               </div>
             ))
           ) : (
-            <p>No dishes found.</p>
+            <Spinner />
           )}
         </div>
         {/* <div className="pagination">

@@ -11,7 +11,7 @@ const Footer = () => {
               <button>subscribe</button>
             </div>
           </div>
-          <img src="./Food Image.svg" alt="Eror" />
+          <img src="../Food Image.svg" alt="Eror" />
         </div>
         <div className="footer-2">
           <div className="flex-class flex-class1">
@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="line"></div>
           <div className="flex-class flex-class2">
             <p>© 2023 EATLY All Rights Reserved.</p>
-            <img src="./Socials (1).svg" alt="Eror" />
+            <img src="../Socials (1).svg" alt="Eror" />
           </div>
         </div>
       </div>

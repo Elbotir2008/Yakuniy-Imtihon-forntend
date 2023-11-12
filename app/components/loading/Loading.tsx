@@ -1,9 +1,6 @@
 import ClipLoader from "react-spinners/ClipLoader";
 const override = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  margin: "250px auto",
+  margin: "0px 430px",
   borderColor: "blue",
 };
 

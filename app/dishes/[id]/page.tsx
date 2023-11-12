@@ -4,9 +4,10 @@ import "./details.scss";
 import axios from "axios";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
+import { ProductType } from "@/app/types/type";
 
-const Details = ({ params: { id } }) => {
-  const [detailsDish, setDetailsDish] = useState(null);
+const Details = ({ params: { id } }: any) => {
+  const [detailsDish, setDetailsDish] = useState<any>(null);
 
   useEffect(() => {
     const fetchDetailsDish = async () => {

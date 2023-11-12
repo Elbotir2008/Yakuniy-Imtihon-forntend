@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import "./cart.scss";
+import Spinner from "../components/loading/Loading";
 
 const Cart = () => {
   const [cart, setCart] = useState<any[]>([]);
@@ -66,7 +67,7 @@ const Cart = () => {
               </div>
             ))
           ) : (
-            <h1>Loading</h1>
+            <Spinner />
           )}
         </div>
       </div>

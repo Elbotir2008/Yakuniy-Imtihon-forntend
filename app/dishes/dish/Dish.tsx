@@ -15,6 +15,14 @@ const Dish = () => {
   //   pageNumbers.push(i);
   // }
 
+  const [cart, setCart] = useState([]);
+
+  const handleClickImg = (dsh) => {
+    const updatedCart = [...cart, dsh];
+    setCart(updatedCart);
+    localStorage.setItem("cartProducts", JSON.stringify(updatedCart));
+  };
+
   const searchDishes = async () => {
     try {
       let res = await axios.get(
@@ -58,7 +66,13 @@ const Dish = () => {
                 </div>
                 <div className="flex-class">
                   <p>{dsh.price}</p>
-                  <img src="./Add.svg" className="add" alt="Error" />
+
+                  <img
+                    src="./Add.svg"
+                    onClick={() => handleClickImg(dsh)}
+                    className="add"
+                    alt="Error"
+                  />
                 </div>
               </div>
             ))

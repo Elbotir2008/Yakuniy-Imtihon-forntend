@@ -4,7 +4,6 @@ import "./details.scss";
 import axios from "axios";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
-import { ProductType } from "@/app/types/type";
 
 const Details = ({ params: { id } }: any) => {
   const [detailsDish, setDetailsDish] = useState<any>(null);

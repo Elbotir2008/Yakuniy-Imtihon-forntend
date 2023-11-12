@@ -3,8 +3,17 @@ import axios from "axios";
 import "./dishes.scss";
 import { useState, useEffect } from "react";
 
+type Dish = {
+  id: number;
+  imgUrl: string;
+  category: string;
+  name: string;
+  stars: number;
+  price: number;
+};
+
 const Dishes = () => {
-  const [dish, setDish] = useState([]);
+  const [dish, setDish] = useState<Dish[]>([]);
 
   const fetchDishes = async () => {
     try {

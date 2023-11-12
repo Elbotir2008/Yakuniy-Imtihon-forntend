@@ -7,25 +7,20 @@ import "./cart.scss";
 const Cart = () => {
   const [cart, setCart] = useState([]);
 
-  useEffect(() => {
-    const storedCart = localStorage.getItem("cartProducts");
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    }
-  }, []);
-  console.log(getCarts);
+  const storedCart = localStorage.getItem("cartProducts");
+  console.log(setCart);
   return (
     <div>
       <Header />
       <div className="container">
         <div className="cart-cards">
-          {getCarts ? (
+          {storedCart ? (
             <div className="cart-card flex-class">
               <div className="cart-left flex-class">
-                <img src={getCarts[0].imgUrl} alt="Error" />
+                <img src={storedCart.imgUrl} alt="Error" />
                 <div className="cart-texts">
-                  <h3>{getCarts[0].name}</h3>
-                  <span>{getCarts[0].price}</span>
+                  <h3>{storedCart.name}</h3>
+                  <span>{storedCart.price}</span>
                 </div>
               </div>
               <div className="cart-right">

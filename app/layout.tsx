@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children} <ToastContainer />
+        {children} <ToastContainer style={{ zIndex: "10000" }} />
       </body>
     </html>
   );

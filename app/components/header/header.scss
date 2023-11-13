@@ -6,9 +6,14 @@ header {
   height: 10rem;
   background-color: #f9f9f9;
   padding: 3rem;
-  z-index: 222222;
+  z-index: 222;
   margin-bottom: 10rem;
-
+  transition: 0.1s linear;
+  &.shrink {
+    height: 6rem;
+    transition: 0.1s linear;
+    padding: 1rem;
+  }
   nav {
     justify-content: space-between;
     align-items: center;
@@ -98,7 +103,6 @@ header {
 
       .nav-right {
         display: none;
-
         &.open {
           display: flex;
           flex-direction: column;
@@ -114,6 +118,9 @@ header {
           button {
             margin-bottom: 1rem;
           }
+        }
+        img {
+          display: inline-block !important;
         }
       }
 

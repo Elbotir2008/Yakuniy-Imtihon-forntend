@@ -1,21 +1,11 @@
-import ClipLoader from "react-spinners/ClipLoader";
-const override = {
-  margin: "0px 430px",
-  borderColor: "blue",
-};
-
-function Spinner() {
+import "./loading.css";
+const Spinner = () => {
   return (
-    <div className="sweet-loading">
-      <ClipLoader
-        cssOverride={override}
-        loading={true}
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+    <div className="loader-container">
+      <div className="loader"></div>
+      <div className="loader-text">Loading...</div>
     </div>
   );
-}
+};
 
 export default Spinner;

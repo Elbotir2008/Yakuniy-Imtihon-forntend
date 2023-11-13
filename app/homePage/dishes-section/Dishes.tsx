@@ -3,9 +3,12 @@ import axios from "axios";
 import "./dishes.scss";
 import { useState, useEffect } from "react";
 import { ProductType } from "@/app/types/type";
+import { toast } from "react-toastify";
+import Spinner from "@/app/components/loading/Loading";
 
 const Dishes = () => {
   const [dish, setDish] = useState<ProductType[]>([]);
+  const [cart, setCart] = useState<ProductType[]>([]);
 
   const fetchDishes = async () => {
     try {
@@ -22,6 +25,15 @@ const Dishes = () => {
   useEffect(() => {
     fetchDishes();
   }, []);
+
+  const handleClickImg = (product: ProductType): void => {
+    if (!cart.includes(product)) {
+      const updatedCart: any = [...cart, { ...product, numOfProducts: 1 }];
+      setCart(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+    }
+    toast.success("Successfully added in Cart");
+  };
 
   return (
     <section className="dishes-section">
@@ -45,12 +57,17 @@ const Dishes = () => {
                 </div>
                 <div className="flex-class">
                   <p>{dsh.price}</p>
-                  <img src="./Add.svg" className="add" alt="Eror" />
+                  <img
+                    src="./Add.svg"
+                    onClick={() => handleClickImg(dsh)}
+                    className="add"
+                    alt="Eror"
+                  />
                 </div>
               </div>
             ))
           ) : (
-            <p>Loading dishes...</p>
+            <Spinner />
           )}
         </div>
       </div>

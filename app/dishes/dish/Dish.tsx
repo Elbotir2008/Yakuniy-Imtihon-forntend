@@ -10,13 +10,8 @@ import Spinner from "@/app/components/loading/Loading";
 const Dish = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchedDishes, setSearchedDishes] = useState<ProductType[]>([]);
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [dishesPerPage] = useState(4);
-  // const totalPages = Math.ceil(searchedDishes.length / dishesPerPage);
-  // const pageNumbers = [];
-  // for (let i = 1; i <= totalPages; i++) {
-  //   pageNumbers.push(i);
-  // }
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   const [cart, setCart] = useState<ProductType[]>([]);
 
@@ -31,11 +26,11 @@ const Dish = () => {
 
   const searchDishes = async () => {
     try {
-      let res = await axios.get(
-        `https://654ea70d358230d8f0ccbf59.mockapi.io/api/v1/Dishes?search=${searchQuery}&page=1&limit=8`
+      const res = await axios.get(
+        `https://654ea70d358230d8f0ccbf59.mockapi.io/api/v1/Dishes?search=${searchQuery}&page=${currentPage}&limit=8`
       );
       setSearchedDishes(res.data);
-      console.log(res.data);
+      setTotalPages(res.headers["x-total-pages"]);
     } catch (err) {
       console.log(err);
     }
@@ -43,7 +38,11 @@ const Dish = () => {
 
   useEffect(() => {
     searchDishes();
-  }, [searchQuery]);
+  }, [searchQuery, currentPage]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <section className="dishesPage-section">
@@ -72,7 +71,6 @@ const Dish = () => {
                 </div>
                 <div className="flex-class">
                   <p>{dsh.price}</p>
-
                   <img
                     src="./Add.svg"
                     onClick={() => handleClickImg(dsh)}
@@ -86,29 +84,7 @@ const Dish = () => {
             <Spinner />
           )}
         </div>
-        {/* <div className="pagination">
-          <button
-            onClick={() => setCurrentPage(currentPage - 1)}
-            disabled={currentPage === 1}
-          >
-            Previous
-          </button>
-          {pageNumbers.map((number) => (
-            <button
-              key={number}
-              onClick={() => setCurrentPage(number)}
-              className={currentPage === number ? "active" : ""}
-            >
-              {number}
-            </button>
-          ))}
-          <button
-            onClick={() => setCurrentPage(currentPage + 1)}
-            disabled={currentPage === totalPages}
-          >
-            Next
-          </button>
-        </div> */}
+        <div className="pagination"></div>
       </div>
     </section>
   );

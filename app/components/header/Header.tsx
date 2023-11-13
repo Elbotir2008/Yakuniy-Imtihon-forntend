@@ -1,17 +1,33 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import "./header.scss";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [shrinkNavbar, setShrinkNavbar] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setShrinkNavbar(true);
+    } else {
+      setShrinkNavbar(false);
+    }
+  };
+
+  // Add event listener to handle scroll
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header>
+    <header className={shrinkNavbar ? "shrink" : ""}>
       <div className="container">
         <nav className={`flex-class ${menuOpen ? "open" : ""}`}>
           <div className="nav-left flex-class">

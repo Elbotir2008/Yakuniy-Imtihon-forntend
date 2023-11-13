@@ -40,7 +40,7 @@ const Cart = () => {
   return (
     <div>
       <Header />
-      <div className="container">
+      <div className="container cart-container">
         <div className="cart-cards">
           {cart ? (
             cart.map((pr, index) => (
@@ -69,6 +69,27 @@ const Cart = () => {
           ) : (
             <Spinner />
           )}
+        </div>
+        <div className="big">
+          <div className="liner">
+            <div className="par">
+              <p>Subtotal</p>
+              <p>$58.96</p>
+            </div>
+            <div className="line"></div>
+          </div>
+          <div className="liner">
+            <div className="par">
+              <p>Subtotal</p>
+              <p>$58.96</p>
+            </div>
+            <div className="line"></div>
+          </div>
+          <div className="bottom">
+            <h2>Total</h2>
+            <h2>$62.55</h2>
+          </div>
+          <button>Review Payment</button>
         </div>
       </div>
       <Footer />

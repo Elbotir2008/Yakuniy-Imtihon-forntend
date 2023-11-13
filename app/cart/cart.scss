@@ -1,89 +1,204 @@
-.cart-cards {
-  width: 100%;
-  padding: 1rem;
-  margin-top: -10rem;
-  margin-bottom: 30rem;
-  @media (max-width: 768px) {
-    margin-bottom: 10rem;
-  }
-  .cart-card {
-    justify-content: space-between;
-    margin: 0 auto;
-    background-color: #fff;
-    margin-top: 2rem;
-    width: 70rem;
-    height: 12rem;
+.cart-container {
+  .cart-cards {
+    width: 100%;
     padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: -10px 10px 50px 0px #eee;
+    margin-top: -10rem;
+    margin-bottom: 30rem;
     @media (max-width: 768px) {
-      width: 90%;
-      height: auto;
+      margin-bottom: 10rem;
     }
-    .cart-left {
-      img {
-        margin-right: 1rem;
+    .cart-card {
+      justify-content: space-between;
+      margin: 0 auto;
+      background-color: #fff;
+      margin-top: 2rem;
+      width: 70rem;
+      height: 12rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: -10px 10px 50px 0px #eee;
+      @media (max-width: 768px) {
+        width: 90%;
+        height: auto;
       }
-      .cart-texts {
-        h3 {
-          margin-top: 1rem;
-          font-size: 2rem;
-          font-weight: 600;
-          @media (max-width: 480px) {
-            width: 10rem;
-          }
-        }
-        span {
-          margin-top: 1rem;
-          color: #323142;
-          font-size: 1.9rem;
-          font-weight: 600;
-        }
-      }
-    }
-    .cart-right {
-      @media (max-width: 480px) {
-        visibility: hidden;
-      }
-      .btns {
-        gap: 2rem;
-        padding-top: 3rem;
-        button {
-          border-radius: 1.5rem;
-          height: 4rem;
-          width: 5rem;
-          p {
-            margin: -1.5rem;
-            font-size: 3rem;
-          }
-        }
-        .btn-cart1 {
-          font-size: 1.5rem;
-          border: 1px solid #323142;
-          color: #323142;
-          background-color: #fff;
-        }
-        .btn-cart2 {
+      .cart-left {
+        img {
           margin-right: 1rem;
-          font-size: 1.5rem;
-          background-color: #323142;
-          &:hover {
-            color: #fff;
+        }
+        .cart-texts {
+          h3 {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 600;
+            @media (max-width: 480px) {
+              width: 10rem;
+            }
+          }
+          span {
+            margin-top: 1rem;
+            color: #323142;
+            font-size: 1.9rem;
+            font-weight: 600;
           }
         }
-        p {
-          margin-top: 0.5rem;
-          font-size: 2rem;
+      }
+      .cart-right {
+        @media (max-width: 480px) {
+          display: none;
+        }
+        .btns {
+          gap: 2rem;
+          padding-top: 3rem;
+          button {
+            border-radius: 1.5rem;
+            height: 4rem;
+            width: 5rem;
+            p {
+              margin: -1.5rem;
+              font-size: 3rem;
+            }
+          }
+          .btn-cart1 {
+            font-size: 1.5rem;
+            border: 1px solid #323142;
+            color: #323142;
+            background-color: #fff;
+          }
+          .btn-cart2 {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            background-color: #323142;
+            &:hover {
+              color: #fff;
+            }
+          }
+          p {
+            margin-top: 0.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+          }
+        }
+        h4 {
+          margin-left: 5.5rem;
+          margin-top: 0.4rem;
+          color: #323142;
+          font-size: 1.5rem;
           font-weight: 600;
         }
       }
-      h4 {
-        margin-left: 5.5rem;
-        margin-top: 0.4rem;
-        color: #323142;
-        font-size: 1.5rem;
-        font-weight: 600;
+    }
+  }
+
+  .big {
+    margin-left: 230px;
+    .liner {
+      .par {
+        display: flex;
+        align-items: center;
+        column-gap: 543px;
+        p {
+          color: #ccc;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 117.5%;
+          letter-spacing: -0.4px;
+        }
       }
+      .line {
+        width: 680.351px;
+        height: 1.002px;
+        background: #acadb9;
+        margin-top: 13px;
+        margin-bottom: 15px;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      column-gap: 546px;
+      h2 {
+        color: var(--Black-Color, #323142);
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 117.5%;
+        letter-spacing: -0.5px;
+        margin-top: 13px;
+        margin-bottom: 62px;
+      }
+    }
+    button {
+      color: var(--Cream---Background, #fff3eb);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      width: 75%;
+      border-radius: 15.043px;
+      background: var(--Purple, #6c5fbc);
+      margin-bottom: 144px;
+      &:hover {
+        background-color: #fff;
+        color: #6c5fbc;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-left: 1rem;
+      .liner {
+        .par {
+          column-gap: 5px;
+          p {
+            margin: 0 auto;
+            font-size: 14px;
+          }
+        }
+        .line {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 5px;
+        h2 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      }
+      button {
+        margin-top: 4rem;
+        margin-left: 9rem;
+        margin-bottom: 10rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .liner {
+      .par {
+        column-gap: 5px;
+        p {
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+      .line {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 5px;
+      h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    }
+    button {
+      margin-top: 4rem;
+      margin-left: 5rem;
+      margin-bottom: 10rem;
     }
   }
 }
